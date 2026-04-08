@@ -214,6 +214,21 @@ nav {
     font-weight: 700;
 }
 
+.modal {
+    width: 28rem;
+    height:28rem;
+    background-color: #dad9d9;
+    position: absolute;
+    bottom: -25rem;
+    right: 17rem;
+    z-index: 10;
+    display: none;
+}
+
+.modal.shown{
+    display: block;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 753px) {
     html {
@@ -224,6 +239,10 @@ nav {
 @media (max-width: 603px) {
     html {
         font-size: 45%;
+    }
+
+    #root {
+        height: 100vh;
     }
 
     .chatInterface {
@@ -245,19 +264,4 @@ nav {
     html {
         font-size: 37.5%;
     }
-}
-
-.modal {
-    width: 28rem;
-    height:28rem;
-    background-color: #dad9d9;
-    position: absolute;
-    bottom: -25rem;
-    right: 17rem;
-    z-index: 10;
-    display: none;
-}
-
-.modal.shown{
-    display: block;
 }
