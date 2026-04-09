@@ -203,7 +203,7 @@ nav {
 .bottom {
     font-size: 1.2rem;
     text-align: center;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -230,38 +230,32 @@ nav {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 753px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 603px) {
-    html {
-        font-size: 45%;
-    }
+@media (max-width: 500px) {
 
     #root {
         height: 100vh;
     }
 
     .chatInterface {
+        margin-top: 15rem;
+        margin-bottom: 5rem;
         height: 100vh;
         justify-content: space-between;
+    }
+
+    .bottom {
+        display: none;
     }
 
     .search-last {
         display: none;
     }
 
-    .bottom {
-        position: relative;
+    .nav-btns {
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-}
 
-
-@media (max-width: 545px) {
-    html {
-        font-size: 40%;
-    }
 }
