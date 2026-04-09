@@ -243,6 +243,11 @@ nav {
         justify-content: space-between;
     }
 
+    .seaarch-cont {
+        position: sticky;
+        top: 0;
+    }
+
     .bottom {
         display: none;
     }
