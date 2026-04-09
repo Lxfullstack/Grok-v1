@@ -236,6 +236,11 @@ nav {
         height: 100vh;
     }
 
+    nav {
+        position: fixed;
+        top: 0;
+    }
+
     .chatInterface {
         margin-top: 15rem;
         margin-bottom: 5rem;
